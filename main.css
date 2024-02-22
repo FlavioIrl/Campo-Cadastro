@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto',sans-serif;
+}
+
+body {
+    padding-top: 25px;
+    background-color: #fff;
+}
+
+header h1 {
+    background-color: #ebebeb;
+    font-weight: 700;
+    padding: 8px 160px;
+    border-radius: 27px 27px 0px 0;
+    font-size: 60px;
+    width: 100%;
+    padding-bottom: 30px
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal*/
+}
+
+.dados-pessoais h3, .endereco h3 {
+    color: #888686;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.endereco h3 {
+    padding-top: 30px;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(218, 218, 218);
+}
+
+.cadastroForm{
+    background-color: #ebebeb;
+    width: 663px
+}
+
+.inputs {
+    padding: 0px 151px;
+}
+
+.inputFlex1, .inputFlex2{
+    display: inline-block;
+}
+
+.inputs label {
+    display: flex;
+    font-size: 20px;
+}
+
+.error {
+    color: red; /* Cor do texto da mensagem de erro */
+    font-size: 12px; /* Tamanho da fonte da mensagem de erro */
+    margin-top: 5px; /* Espaçamento superior para separar a mensagem do campo */
+    display: block; /* Garante que a mensagem de erro seja exibida como bloco */
+}
+
+#cadastro {
+    margin: 0 auto;
+    margin-top: 14px;
+    border-radius:16px;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgb(24, 216, 56);
+    color: #fff;
+    padding: 15px 60px;
+    display: block;
+    cursor: pointer;
+}
+
+
+.bttn-cadastro:hover {
+    background-color: rgb(14, 190, 14);
+    color: rgb(235, 250, 235);
+}
+
+.inputs input {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #969696;
+    border-radius: 9px;
+    padding: 8px 14px;
+    margin-bottom: 10px;
+}
+
+.opcional{
+    color: #888686;
+}
+
+#cidade{
+    margin-right: 29px;
+    width: 173px;
+}
+
+#estado{
+    width: 68px;
+    text-transform: uppercase;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+#cep , #numero{
+    width: 138px;
+}
+
+#cpf{
+    width: 172px;
+}
+
+#telefone {
+    width: 186px;
+}
+
+footer {
+    background-color: #ebebeb;
+    padding-top: 30px;
+    padding: 8px 188px;
+    border-radius: 0 0 27px 27px;
+}

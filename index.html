@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Simples</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastre-se</h1>
+        </header>
+        <form class="cadastroForm">
+            <div class="inputs">
+                <div class="dados-pessoais">
+                    <h3>Dados Pessoais</h3>
+                    <div>
+                        <label>Nome completo</label>
+                        <input type="text" id="nomeCompleto" name="nomeCompleto">
+                        <span class="error-message" id="error-nomeCompleto"></span>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" id="email" name="email">
+                        <span class="error-message" id="error-email"></span>
+                    </div>
+                    <div>
+                        <label>Seu telefone</label>
+                        <input type="tel" id="telefone" name="telefone">
+                        <span class="error-message" id="error-telefone"></span>
+                    </div>
+                    <div>
+                        <label>CPF</label>
+                        <input type="text" id="cpf" name="cpf">
+                        <span class="error-message" id="error-cpf"></span>
+                    </div>
+                </div>
+                <div class="endereco">
+                    <h3>Endereço</h3>
+                    <div>
+                        <label>CEP</label>
+                        <input type="text" id="cep" name="cep">
+                        <span class="error-message" id="error-cep"></span>
+                    </div>
+                    <div class="inputFlex1">
+                        <label id="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade">
+                        <span class="error-message" id="error-cidade"></span>
+                    </div>
+                    <div class="inputFlex2">
+                        <label>Estado</label>
+                        <input type="text" id="estado" name="estado">
+                        <span class="error-message" id="error-estado"></span>
+                    </div>
+                    <div>
+                        <label>Bairro</label>
+                        <input type="text" id="bairro" name="bairro">
+                        <span class="error-message" id="error-bairro"></span>
+                    </div>
+                    <div>
+                        <label>Rua</label>
+                        <input type="text" id="rua" name="rua">
+                        <span class="error-message" id="error-rua"></span>
+                    </div>
+                    <div>
+                        <label>Número</label> 
+                        <input type="number" id="numero" name="numero">
+                        <span class="error-message" id="error-numero"></span>
+                    </div>
+                    <div>
+                        <label>Complemento</label><label class="opcional">-Opcional</label>
+                        <input type="text" id="complemento" name="complemento">
+                    </div>
+                </div>
+                    <button type="submit" id="cadastro">Cadastrar</button>
+            </div>
+        </form>
+        <footer>
+            <p>
+                &copy; - Desenvolvido por <a href="https://www.linkedin.com/in/flávio-irala-pereira-16a2ab22b/">Flavio Irala</a> <br> 2023 - Aluno (Full Stack Python - EBAC)
+            </p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./JS/jquery.mask.min.js"></script>
+    <script src="./JS/jquery.validate.min.js"></script>
+    <script src="./JS/messages_pt_BR.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
